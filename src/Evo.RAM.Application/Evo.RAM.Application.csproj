@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <RootNamespace>Evo.RAM</RootNamespace>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <DocumentationFile>..\Evo.RAM.HttpApi.Host\Notes\EvoApplication.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Evo.RAM.Domain\Evo.RAM.Domain.csproj" />
+    <ProjectReference Include="..\Evo.RAM.Application.Contracts\Evo.RAM.Application.Contracts.csproj" />
+    <ProjectReference Include="..\Evo.RAM.EntityFrameworkCore\Evo.RAM.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+
+  <ItemGroup> 
+    <PackageReference Include="Evo.Distributed.Shared" Version="2.2.0" />   
+    
+    <PackageReference Include="Evo.Infrastructure" Version="2.2.0" />     
+    
+    <PackageReference Include="Volo.Abp.Ddd.Application" Version="8.0.4" />
+   
+  </ItemGroup>
+
+</Project>

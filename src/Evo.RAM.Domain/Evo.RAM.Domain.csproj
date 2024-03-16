@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <RootNamespace>Evo.RAM</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Evo.RAM.Domain.Shared\Evo.RAM.Domain.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Evo.Distributed.Shared" Version="2.2.0" />
+    <PackageReference Include="Evo.Infrastructure" Version="2.2.0" />
+    <PackageReference Include="Volo.Abp.Emailing" Version="8.0.4" />
+    <PackageReference Include="Volo.Abp.Identity.Domain" Version="8.0.4" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.Domain.Identity" Version="8.0.4" />
+    <PackageReference Include="Volo.Abp.BackgroundJobs.Domain" Version="8.0.4" />
+    <PackageReference Include="Volo.Abp.AuditLogging.Domain" Version="8.0.4" />
+    <PackageReference Include="Volo.Abp.TenantManagement.Domain" Version="8.0.4" />
+    <PackageReference Include="Volo.Abp.FeatureManagement.Domain" Version="8.0.4" />
+    <PackageReference Include="Volo.Abp.SettingManagement.Domain" Version="8.0.4" />
+    <PackageReference Include="Volo.Abp.OpenIddict.Domain" Version="8.0.4" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.Domain.OpenIddict" Version="8.0.4" />
+  </ItemGroup>
+
+
+</Project>

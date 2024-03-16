@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <Nullable>disable</Nullable>
+    <RootNamespace>Evo.RAM</RootNamespace>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <DocumentationFile>..\Evo.RAM.HttpApi.Host\Notes\EvoApplicationContracts.xml</DocumentationFile>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Evo.RAM.Domain.Shared\Evo.RAM.Domain.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Casbin.NET.Adapter.EFCore" Version="2.1.0" />
+    <PackageReference Include="Volo.Abp.ObjectExtending" Version="8.0.4" />
+    <PackageReference Include="Evo.Infrastructure" Version="2.2.0" />
+  </ItemGroup>
+
+</Project>
