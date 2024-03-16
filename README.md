@@ -2,6 +2,7 @@
 
 run `Evo.RAM.HttpApi.Host`, and access `https://localhost:44342/api/app/data-permission`  and `https://localhost:44342/api/app/role`
 
+Both DataPermission and Role have a `List<string>` field named Tags, but only DataPermission works, and Tags in a Role need to be set to `IEnumerable<string>`
 
 ```sql
 
